@@ -8,6 +8,7 @@
   --bege: #c5a86f;
   --azul-caixa: #7f9198;
   --branco: #ffffff;
+  --cor-do-mar : #ea7018a6;
 }
 
 /* RESET BASICO */
@@ -43,10 +44,37 @@ body {
   gap: 40px;
 }
 
+.topo-esquerda{
+font-family: "Cinzel", serif;
+color: var(--vinho);
+ font-size: clamp(2.2rem, 7vw, 5.2rem);
+line-height: 1.02;
+margin-bottom: 26px;
+}
+
+.frase{
+  max-width: 300px;
+  color: var(--vinho);
+  border: 1px solid var(--vinho);
+  border-radius: 999px;
+  padding: 18px 20px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.topo-direita img{
+  width: min(520px, 100%);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-inline: auto;
+}
+
 /* BANNER */
 .banner {
-  min-height: 50vh;
-  background: #333; /* Troque pela imagem: background: url(...) center / cover no-repeat; */
+  min-height: 58vh;
+  background: url(./assets/Fundo-1.png) center / cover no-repeat;
 }
 
 .sobreposicao {
@@ -55,11 +83,21 @@ body {
 }
 
 .banner-conteudo {
-  min-height: 50vh;
+  min-height: 58vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 24px;
+}
+
+.banner-conteudo h2{
+  font-family: "Cinzel", serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 400;
+}
+.banner-conteudo p{
+  max-width: 520px;
+  font-size: clamp(1rem, 2vw, 1.8rem);
 }
 
 /* FAIXA DE TEXTO */
