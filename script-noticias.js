@@ -7,7 +7,22 @@ const botaoLinkNoticia = document.getElementById('botao-link-noticia');
 const gatilhosNoticia = document.querySelectorAll('.gatilho-noticia');
 
 // EDITE AQUI: coloque o texto completo que deve ser lido para cada noticia.
-const TEXTOS_NOTICIAS = {};
+const TEXTOS_NOTICIAS = {
+  teste1:`Olá somente um texte de voz`,
+  teste2:`Olá texto de voz dois`,
+  conselho: `O Conselho Municipal de Desenvolvimento Rural Sustentável e Solidário realizou uma reunião 
+ordinária em conjunto com a Secretaria de Agricultura e Abastecimento, com foco na discussão de ações 
+e estratégias voltadas ao fortalecimento do meio rural.
+
+Durante o encontro, foram debatidas iniciativas que buscam melhorar as condições de trabalho, ampliar o 
+apoio aos produtores e promover o desenvolvimento sustentável no campo, sempre alinhadas às necessidades 
+da agricultura local.
+
+O diálogo permanente entre o Conselho e o poder público reforça o compromisso com a construção de 
+políticas públicas eficientes, garantindo mais oportunidades, qualidade de vida e valorização para 
+quem vive e produz no meio rural`
+
+};
 
 let textoNoticiaAtivo = '';
 let urlNoticiaAtiva = '';
